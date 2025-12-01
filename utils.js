@@ -1,5 +1,6 @@
+import fs from "node:fs";
+
 export const readInput = (file = "input.txt", split = /\r?\n/) => {
-  const fs = require("node:fs");
   const input = fs.readFileSync(file, "utf8");
   return input.split(split);
 };
